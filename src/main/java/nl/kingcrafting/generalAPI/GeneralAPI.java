@@ -3,6 +3,9 @@ package nl.kingcrafting.generalAPI;
 import nl.kingcrafting.generalAPI.tools.io.FileTools;
 
 public class GeneralAPI {
+	
+	
+	
 
 	public GeneralAPI(){
 		init();
@@ -11,7 +14,7 @@ public class GeneralAPI {
 	public static String Message = "General API: ";
 	public static FileTools fileTools = new FileTools();
 	
-	//temp
+	
 	public static String getMessage(){
 		
 		return Message;
