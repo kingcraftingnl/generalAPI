@@ -16,13 +16,7 @@ public class StringTools {
 
 	}
 	
-	
-	
-	
-	public static String readStringFromFile(File file) throws IOException{
-		return FileTools.readStringFromFile(file);
-		
-	}
+
 	
 
 }
