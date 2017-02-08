@@ -15,5 +15,14 @@ public class StringTools {
 		return FileTools.readStringFromFile(file);
 
 	}
+	
+	
+	
+	
+	public static String readStringFromFile(File file) throws IOException{
+		return FileTools.readStringFromFile(file);
+		
+	}
+	
 
 }
