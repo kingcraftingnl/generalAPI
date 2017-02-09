@@ -4,7 +4,6 @@
 
   <groupId>nl.kingcrafting</groupId>
   <artifactId>generalAPI</artifactId>
-  <version>2.5.3</version>
   <packaging>jar</packaging>
 
   <name>generalAPI</name>
@@ -35,4 +34,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <version>0.0.1</version>
 </project>

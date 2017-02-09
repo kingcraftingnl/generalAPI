@@ -1,5 +1,6 @@
 package nl.kingcrafting.generalAPI.tools;
 
+import nl.kingcrafting.generalAPI.GeneralAPI;
 import nl.kingcrafting.generalAPI.ObjectType;
 
 public abstract class generalObject {
