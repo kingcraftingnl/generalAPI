@@ -13,7 +13,7 @@ public class GeneralAPI {
 	}
 	public static String Message = "General API: ";
 	public static FileTools fileTools = new FileTools();
-	public static String ignoreThis = "Ignore Me";
+	public static String ignoreThis = "Ignore Me.";
 	
 	public static String getMessage(){
 		
