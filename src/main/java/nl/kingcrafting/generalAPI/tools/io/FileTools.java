@@ -9,18 +9,14 @@ import java.util.Scanner;
 import nl.kingcrafting.generalAPI.ObjectType;
 import nl.kingcrafting.generalAPI.tools.generalObject;
 
+public class FileTools extends generalObject {
 
-public class FileTools extends generalObject{
-	
 	public FileTools() {
 		setId(1);
 		setName("File Utils");
 		setType(ObjectType.FILE);
-		
+
 	}
-	
-	
-	
 
 	public static void createFile(String dir, String filename) {
 		File f = new File(dir + filename);
@@ -63,7 +59,7 @@ public class FileTools extends generalObject{
 			output = new BufferedWriter(new FileWriter(file));
 			output.write(text);
 		} catch (IOException e) {
-			System.out.println("Error while Writing to file with txt:" + text  + "To" + file.getAbsolutePath());
+			System.out.println("Error while Writing to file with txt:" + text + "To" + file.getAbsolutePath());
 		} finally {
 			if (output != null) {
 				output.close();
@@ -71,15 +67,10 @@ public class FileTools extends generalObject{
 		}
 
 	}
-	public static void renameFile(File file, String newName){
+
+	public static void renameFile(File file, String newName) {
 		file.renameTo(new File(newName));
-		
+
 	}
 
-
-
-
-	
-
-	
 }
