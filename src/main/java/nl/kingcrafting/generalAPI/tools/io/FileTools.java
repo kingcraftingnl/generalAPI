@@ -6,7 +6,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import nl.kingcrafting.generalAPI.GeneralAPI;
 import nl.kingcrafting.generalAPI.ObjectType;
 import nl.kingcrafting.generalAPI.tools.generalObject;
 
@@ -28,8 +27,7 @@ public class FileTools extends generalObject{
 		try {
 			f.createNewFile();
 		} catch (IOException e) {
-			e.printStackTrace();
-			System.out.println(GeneralAPI.Message + "Error while creating file" + filename);
+			System.out.println("Error while creating file " + filename);
 		}
 	}
 
@@ -65,7 +63,7 @@ public class FileTools extends generalObject{
 			output = new BufferedWriter(new FileWriter(file));
 			output.write(text);
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Error while Writing to file with txt:" + text  + "To" + file.getAbsolutePath());
 		} finally {
 			if (output != null) {
 				output.close();
@@ -77,6 +75,10 @@ public class FileTools extends generalObject{
 		file.renameTo(new File(newName));
 		
 	}
+
+
+
+
 	
 
 	

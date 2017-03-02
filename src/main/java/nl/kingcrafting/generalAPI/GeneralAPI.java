@@ -1,31 +1,27 @@
 package nl.kingcrafting.generalAPI;
 
 import nl.kingcrafting.generalAPI.tools.io.FileTools;
+import nl.kingcrafting.generalAPI.tools.string.StringTools;
 
 public class GeneralAPI {
-	
-	
-	
 
-	public GeneralAPI(){
+	public GeneralAPI() {
 		init();
-		
+
 	}
-	public static String Message = "General API: ";
-	public static FileTools fileTools = new FileTools();
-	public static String ignoreThis = "Ignore Me";
-	
-	public static String getMessage(){
-		
-		return Message;
+
+	private FileTools fileTools = new FileTools();
+	private StringTools strignTools = new StringTools();
+
+	private synchronized void init() {
+
 	}
-	
-	private synchronized void init(){
-		
-		
-		
+
+	FileTools getFileTools() {
+		return this.fileTools;
 	}
-	
-	
-	
+
+	StringTools getStringTools() {
+		return this.strignTools;
+	}
 }
