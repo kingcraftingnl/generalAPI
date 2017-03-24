@@ -15,7 +15,7 @@ public abstract class p {
 	}
 
 
-	public void setName(String name) {
+	public void setNameP(String name) {
 		this.name = name;
 	}
 
