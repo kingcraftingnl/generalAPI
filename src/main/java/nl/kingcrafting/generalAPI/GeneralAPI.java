@@ -9,7 +9,7 @@ public class GeneralAPI {
 		init();
 
 	}
-
+	//test
 	private FileTools fileTools = new FileTools();
 	private StringTools strignTools = new StringTools();
 
